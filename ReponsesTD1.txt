@@ -1,3 +1,7 @@
 Ex2
 
 4. Le fichier est maintenant affiché comme nouveau fichier.
+
+Ex3
+
+16. Le dernier commit "test" a été supprimé et le dernier commit en liste est "Ajout d'un message Hello"
