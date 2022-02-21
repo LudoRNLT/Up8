@@ -6,5 +6,9 @@ int main(void) {
 	for(i=0;i<5;i++) {
 		printf("Element %d: ", i);
 		scanf("%d",&tab[i]);
-	}
+	   }
+	   for(i=0;i<5;i++) {
+		printf(" %d: ", tab[i]);
+	   }
+		return 0;
 }
