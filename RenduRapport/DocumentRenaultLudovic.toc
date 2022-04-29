@@ -1,0 +1,11 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Résumé}{i}{}%
+\contentsline {chapter}{Introduction}{ix}{}%
+\contentsline {chapter}{\numberline {1}Figures}{1}{}%
+\contentsline {section}{\numberline {1.1}Logo de la licence IV}{1}{}%
+\contentsline {section}{\numberline {1.2}Logo de la première année de licence}{1}{}%
+\contentsline {subsection}{\numberline {1.2.1}réalisation du logo}{2}{}%
+\contentsline {section}{\numberline {1.3}Les formules mathématiques}{2}{}%
+\contentsline {section}{\numberline {1.4}Les listes}{2}{}%
+\contentsline {section}{\numberline {1.5}Citation}{2}{}%
+\contentsline {chapter}{Bibliographie}{3}{}%

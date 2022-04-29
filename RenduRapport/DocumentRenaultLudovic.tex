@@ -1,0 +1,144 @@
+\documentclass[a4paper, 12pt]{book}
+\usepackage{graphicx}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{url}
+\usepackage[french]{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+
+
+\begin{document}
+\begin{titlepage}
+  \begin{center}
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \includegraphics[height=1.5cm]{l1info.png}&
+      \includegraphics[height=1.5cm]{licenceIV.png}
+    \end{tabular*}
+    \small 
+    \rule{\textwidth}{.5pt}~\\
+    \large 
+    \textsc{Université Paris 8 - Vincennes à Saint-Denis}\vspace{0.5cm}\\
+    \textbf{Licence Informatique - Outils Informatiques Collaboratifs}\vspace{3.0cm}\\
+    \Large
+    \textbf{Rendu Document}\vspace{1.5cm}\\
+    \large
+    \textbf{Ludovic \textsc{Renault}}\vspace{0.25cm}\\
+    \large
+    \textbf{Numero étudiant : 21001116}\vspace{1.5cm}\\
+
+    Date de rendu : le 29/04/2022\vspace{1.75cm}\\
+  \end{center}\vspace{1.5cm}~\\
+  \begin{tabular}{ll}
+    \hspace{-0.45cm}Tuteur -- Université~:~&~ Syrine \textsc{Saidi}\\
+  \end{tabular}
+\end{titlepage}
+
+\frontmatter
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\mainmatter
+
+\chapter{Figures}
+\markboth{\sc Figures utilisées}{}
+
+\subsection{Préambule}
+
+Ce template est un template que j'utilise pour le rendu de mes rapports de projets. \footnote{ Il m'a été utile lors du premier semestre pour la matière méthologie de la programmation mais aussi lors du second pour la matière programmation impérative.}
+
+\section{Logo de la licence IV}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.2\linewidth]{licenceIV.png}
+  \caption{logo de la licenceIV.\label{fig-bmp}}
+\end{figure}
+
+\section{Logo de la première année de licence}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.3\linewidth]{l1info.png}
+  \caption{logo de la première année de licence.\label{fig-bmp}}
+\end{figure}
+
+\subsection{réalisation du logo}
+	Ce logo a été réalisé par un autre mais retouché par moi-même pour lui donner l'apparence de la L1.
+
+\section{Les formules mathématiques}
+
+ \begin{equation}
+    \lim_{n \to \infty}
+    \sum_{k=1}^n \frac{1}{k^2}
+    = \frac{\pi^2}{6}
+    \end{equation}
+
+ 
+Nous avons aussi :
+
+ $x^{2} \geq 0\qquad
+    \text{pour tout } x\in\mathbf{R}$
+
+
+
+\section{Les listes}
+
+Nous pouvons donc grâce à ce template :
+\begin{itemize}
+
+    \item {Faire un rapport}
+    \item {Faire un document plus simple}
+\end{itemize}
+
+\section{Citation}
+
+Il y a une innocence dans l’admiration. C’est celle de l’homme qui n’envisage pas la possibilité que lui aussi pourrait être admiré un jour \cite{livre}
+
+
+\section{Algorithme}
+
+Comme algorithme nous pouvons avoir :
+
+\begin{algorithm}
+\caption{Calculate $y = x^n$}
+\begin{algorithmic} 
+\REQUIRE $n \geq 0 \vee x \neq 0$
+\ENSURE $y = x^n$
+\STATE $y \leftarrow 1$
+\IF{$n < 0$}
+\STATE $X \leftarrow 1 / x$
+\STATE $N \leftarrow -n$
+\ELSE
+\STATE $X \leftarrow x$
+\STATE $N \leftarrow n$
+\ENDIF
+\WHILE{$N \neq 0$}
+\IF{$N$ is even}
+\STATE $X \leftarrow X \times X$
+\STATE $N \leftarrow N / 2$
+\ELSE[$N$ is odd]
+\STATE $y \leftarrow y \times X$
+\STATE $N \leftarrow N - 1$
+\ENDIF
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
+
+
+
+\bibliographystyle{alpha}
+\bibliography{Reference}
+
+
+
+\end{document}
